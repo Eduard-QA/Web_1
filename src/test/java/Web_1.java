@@ -42,6 +42,7 @@ public class Web_1 {
         el2css.click();
         el2css.clear();
         el2css.sendKeys("eduard.mickel@gmail.com");
+        Thread.sleep(2000);
         System.out.println(el2css.getText());//check why the command is not running
         //WebElement el3css = wd.findElement(By.cssSelector("[data-testid='header-member-menu-button']"));//can't find element
 
@@ -57,7 +58,8 @@ public class Web_1 {
     }
     @AfterMethod
     public void finish() {
-         wd.quit();
+
+      //  wd.quit();
     }
 }
 
